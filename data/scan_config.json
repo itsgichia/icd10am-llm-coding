@@ -1,0 +1,10 @@
+{
+  "seed": 20260321,
+  "dev_n": 10,
+  "test_n": 10,
+  "scan_rows": 40000,
+  "min_chars": 600,
+  "max_chars": 2000,
+  "split": "train",
+  "eligible_pool": 2464
+}

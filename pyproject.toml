@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "icd10am-llm-coding"
+version = "0.1.0"
+description = "Prompt engineering for three-character ICD-10-AM category assignment with a 0.5B instruction-tuned language model"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+authors = [{ name = "Gichia Muiruri" }]
+keywords = ["icd-10-am", "clinical-coding", "prompt-engineering", "health-data-science"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Medical Science Apps.",
+]
+dependencies = [
+    "torch>=2.2",
+    "transformers>=4.44",
+    "datasets>=2.20",
+    "pandas>=2.2",
+    "matplotlib>=3.8",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.urls]
+Homepage = "https://github.com/itsgichia/icd10am-llm-coding"
+Author = "https://www.linkedin.com/in/gichia-muiruri"
+
+[tool.setuptools]
+packages = ["icdprompt"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"

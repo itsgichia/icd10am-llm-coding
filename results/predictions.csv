@@ -1,0 +1,141 @@
+record_id,template,split,true_code,predicted_code,status,method,n_candidates,in_prompt_examples,label_in_prompt_examples,raw_output,is_correct,chapter_correct,contaminated_correct
+0597e19347c9,zero_shot_minimal,dev,C18,,INVALID,none,0,False,False,"Based on the information provided in the discharge summary, the ICD-10-AM principal diagnosis code for this patient would be ""Colon Adenocarcinoma"". This can be inferred from several key points in the discharge notes:",False,False,False
+7f0a1375a954,zero_shot_minimal,dev,K56,D02,VALID,cue,1,False,False,"Based on the information provided, the ICD-10-AM (International Classification of Diseases, Tenth Edition - General) principal diagnosis code for this patient would be: \n  \n **D02.3** \n  \n This code represents ""Abdom",False,False,False
+38f2e94efc75,zero_shot_minimal,dev,C43,,INVALID,none,0,False,False,"Based on the information provided in the discharge summary, the ICD-10-AM principal diagnosis code for this patient would likely be ""Mucosal Malignant Melanoma."" This diagnosis corresponds to the primary cancer that was identified",False,False,False
+01d3ff5888ad,zero_shot_minimal,dev,C91,D02,VALID,cue,1,False,False,"Based on the information provided, the ICD-10-AM (International Classification of Diseases, Tenth Edition - General) principal diagnosis code for this patient would be: \n  \n **D02.3** \n  \n This code represents ""Tumor",False,False,False
+7d68c729f7dd,zero_shot_minimal,dev,I33,,INVALID,none,0,False,False,"Based on the information provided, the ICD-10-AM (International Classification of Diseases, Tenth Edition - General) principal diagnosis codes for the patient would be: \n  \n 1. **Aortic Valve Vegetation**: 79.",False,False,False
+97d7cb7d2576,zero_shot_minimal,dev,K81,D03,VALID,cue,1,False,False,"Based on the information provided, the ICD-10-AM principal diagnosis code for this patient would likely be: \n  \n **D03.5 - Gallbladder Inflammation** \n  \n This diagnosis code corresponds to ""Gallbladder",False,False,False
+46879b57e8d7,zero_shot_minimal,dev,J18,,INVALID,none,0,False,False,"Based on the information provided in the discharge summary, the ICD-10-AM principal diagnosis code for this patient would be ""Bronchial Myelolipoma."" This diagnosis corresponds to the description of the patient's condition,",False,False,False
+806845a87c2f,zero_shot_minimal,dev,C64,,INVALID,none,0,False,False,"Based on the information provided in the discharge summary, the ICD-10-AM (International Classification of Diseases, Tenth Edition - General) principal diagnosis codes for the patient would likely include: \n  \n 1. **Renal Mass** -",False,False,False
+8d19e88f1c90,zero_shot_minimal,dev,D69,M25,VALID,regex,1,False,False,"The ICD-10-AM principal diagnosis code for this patient would likely be ""Myocardial Infarction"" (M25). This is because the discharge summary indicates that the patient had a myocardial infarction,",False,False,False
+5a5d374789e4,zero_shot_minimal,dev,I82,D02,VALID,cue,1,False,False,"Based on the information provided in the discharge summary, the ICD-10-AM (International Classification of Diseases, Tenth Edition - General) principal diagnosis code for this patient would be: \n  \n **D02.6** \n  \n This code",False,False,False
+0597e19347c9,zero_shot_strict_format,dev,C18,J44,VALID,bare,1,False,False,J44,False,False,False
+7f0a1375a954,zero_shot_strict_format,dev,K56,J44,VALID,bare,1,False,False,J44,False,False,False
+38f2e94efc75,zero_shot_strict_format,dev,C43,J44,VALID,bare,1,False,False,J44,False,False,False
+01d3ff5888ad,zero_shot_strict_format,dev,C91,J44,VALID,bare,1,False,False,J44,False,False,False
+7d68c729f7dd,zero_shot_strict_format,dev,I33,J44,VALID,bare,1,False,False,J44,False,False,False
+97d7cb7d2576,zero_shot_strict_format,dev,K81,J44,VALID,bare,1,False,False,J44,False,False,False
+46879b57e8d7,zero_shot_strict_format,dev,J18,J44,VALID,bare,1,False,False,J44,False,True,False
+806845a87c2f,zero_shot_strict_format,dev,C64,J44,VALID,bare,1,False,False,J44,False,False,False
+8d19e88f1c90,zero_shot_strict_format,dev,D69,J52,VALID,bare,1,False,False,J52,False,False,False
+5a5d374789e4,zero_shot_strict_format,dev,I82,J44,VALID,bare,1,False,False,J44,False,False,False
+0597e19347c9,persona_clinical_coder,dev,C18,,INVALID,none,0,False,False,CODE: 3700<100><100,False,False,False
+7f0a1375a954,persona_clinical_coder,dev,K56,,INVALID,none,0,False,False,CODE: 234 \n  \n 234 \n  \n 234 \n  \n 234,False,False,False
+38f2e94efc75,persona_clinical_coder,dev,C43,,INVALID,none,0,False,False,"CODE: M050000 \n  \n This represents the primary diagnosis of ""mucosal malignant melanoma of",False,False,False
+01d3ff5888ad,persona_clinical_coder,dev,C91,,INVALID,none,0,False,False,CODE: 263479,False,False,False
+7d68c729f7dd,persona_clinical_coder,dev,I33,,INVALID,none,0,False,False,CODE: 7890101010,False,False,False
+97d7cb7d2576,persona_clinical_coder,dev,K81,,INVALID,none,0,False,False,CODE: 34578,False,False,False
+46879b57e8d7,persona_clinical_coder,dev,J18,,INVALID,none,0,False,False,CODE: 65479 \n  \n 65479,False,False,False
+806845a87c2f,persona_clinical_coder,dev,C64,,INVALID,none,0,False,False,CODE: 360008 \n  \n 360008,False,False,False
+8d19e88f1c90,persona_clinical_coder,dev,D69,,INVALID,none,0,False,False,CODE: 273.50 \n  \n 273.50,False,False,False
+5a5d374789e4,persona_clinical_coder,dev,I82,,INVALID,none,0,False,False,CODE: 26489,False,False,False
+0597e19347c9,few_shot_three,dev,C18,N10,VALID,bare,1,True,False,N10,False,False,False
+7f0a1375a954,few_shot_three,dev,K56,N10,VALID,bare,1,True,False,N10,False,False,False
+38f2e94efc75,few_shot_three,dev,C43,J44,VALID,bare,1,True,False,J44,False,False,False
+01d3ff5888ad,few_shot_three,dev,C91,N10,VALID,bare,1,True,False,N10,False,False,False
+7d68c729f7dd,few_shot_three,dev,I33,N10,VALID,bare,1,True,False,N10,False,False,False
+97d7cb7d2576,few_shot_three,dev,K81,J44,VALID,bare,1,True,False,J44,False,False,False
+46879b57e8d7,few_shot_three,dev,J18,N10,VALID,bare,1,True,False,N10,False,False,False
+806845a87c2f,few_shot_three,dev,C64,N10,VALID,bare,1,True,False,N10,False,False,False
+8d19e88f1c90,few_shot_three,dev,D69,N96,VALID,bare,1,False,False,N96,False,False,False
+5a5d374789e4,few_shot_three,dev,I82,N10,VALID,bare,1,True,False,N10,False,False,False
+0597e19347c9,few_shot_six,dev,C18,N10,VALID,bare,1,True,False,N10,False,False,False
+7f0a1375a954,few_shot_six,dev,K56,N10,VALID,bare,1,True,False,N10,False,False,False
+38f2e94efc75,few_shot_six,dev,C43,S72,VALID,bare,1,True,False,S72,False,False,False
+01d3ff5888ad,few_shot_six,dev,C91,N10,VALID,bare,1,True,False,N10,False,False,False
+7d68c729f7dd,few_shot_six,dev,I33,C79,VALID,bare,1,True,False,C79,False,False,False
+97d7cb7d2576,few_shot_six,dev,K81,S72,VALID,bare,1,True,False,S72,False,False,False
+46879b57e8d7,few_shot_six,dev,J18,N10,VALID,bare,1,True,False,N10,False,False,False
+806845a87c2f,few_shot_six,dev,C64,N10,VALID,bare,1,True,False,N10,False,False,False
+8d19e88f1c90,few_shot_six,dev,D69,N10,VALID,bare,1,True,False,N10,False,False,False
+5a5d374789e4,few_shot_six,dev,I82,C79,VALID,bare,1,True,False,C79,False,False,False
+0597e19347c9,cot_then_extract,dev,C18,I21,VALID,cue,1,True,False,"First, the patient had a severe chest pain that progressed to a heart attack. Second, he underwent a major operation to remove a colon cancer. Third, he is now stable and requires close monitoring. CODE: I21",False,False,False
+7f0a1375a954,cot_then_extract,dev,K56,H30,VALID,cue,1,False,False,"First, the patient presents with abdominal pain and emesis, suggesting gastrointestinal issues. Second, the patient has a history of strict dieting and exercise leading to significant weight loss. Third, the patient's symptoms have persisted despite conservative management. Therefore, the principal diagnosis is **depression** (code: D), chapter H, category H30.",False,False,False
+38f2e94efc75,cot_then_extract,dev,C43,J44,VALID,cue,1,True,False,"First, the patient had a mucosal malignant melanoma of the hard palate. Second, the ICD-10-AM chapter letter for this condition is J44. Third, the code is J44.",False,False,False
+01d3ff5888ad,cot_then_extract,dev,C91,,INVALID,none,0,False,False,"First, the patient has bilateral foot swelling, decreased urine output, and a poor urinary stream. Second, he has multiple, nontender, firm lymph nodes in the right upper jugular, middle jugular, right and left submandibular, and multiple right-sided axillary lymph nodes. Third, he has elevated uric acid, hyperphosphatemia, and hypocalcemia. Fourth, he has hypercellular smears with reduced megakar",False,False,False
+7d68c729f7dd,cot_then_extract,dev,I33,,INVALID,none,0,False,False,"First, the patient had aortic valve vegetation with moderate severity, severe pulmonary hypertension, and endocarditis. Second, methicillin-resistant Staphylococcus aureus infection was identified. Third, the patient developed small vessel disease with multiple infarctions in multiple vascular territories, including an old right frontal infarct. Third-step reasoning: The patient has multiple condi",False,False,False
+97d7cb7d2576,cot_then_extract,dev,K81,J44,VALID,cue,2,True,False,"First, the chief complaint is ""RUQ pain."" Second, the ICD-10-AM chapter letter that best fits this condition is **J** (Chapter J). Third, the three-character category is **I21**. Therefore, the answer is: \n  \n **CODE: J44** \n  \n **Final Line:** CODE: J44",False,False,False
+46879b57e8d7,cot_then_extract,dev,J18,,INVALID,none,0,False,False,"First, the patient presents with dyspnea and productive cough suggestive of pneumonia. Second, upon transfer, a CT scan reveals an endobronchial mass obstructing the right bronchus intermedius. Third, the patient underwent a rigid bronchoscopy to remove the endobronchial tumor and prevent recurrence via ablation with a diode laser. Fourth, the pathologically confirmed endobronchial tumor is bronch",False,False,False
+806845a87c2f,cot_then_extract,dev,C64,,INVALID,none,0,False,False,"First, the patient had bilateral small solid renal and adrenal masses, a cystic mass at the head of the pancreas, and a paracaval mass. Second, he was diagnosed with VHL disease and staged surgical approach was recommended based on the radiologic findings. Third, in the first stage, through a subcostal anterior transperitoneal approach, right adrenalectomy, resection of the paracaval mass, and enu",False,False,False
+8d19e88f1c90,cot_then_extract,dev,D69,I39,VALID,cue,1,False,False,First diagnosis: Idiopathic thrombocytopenic purpura (IDP) - IDP39.1 \n Final line: CODE: I39,False,False,False
+5a5d374789e4,cot_then_extract,dev,I82,J44,VALID,cue,1,True,False,"The chief complaint is dyspnea and sickle cell crisis. The diagnosis is [diagnosis section withheld]. The hospital course is Chronic obstructive pulmonary disease (COPD), chapter J, category J44. CODE: J44",False,False,False
+0597e19347c9,context_rich_structure,dev,C18,A34,VALID,cue,1,False,False,CODE: A34<01><01>,False,False,False
+7f0a1375a954,context_rich_structure,dev,K56,A23,VALID,cue,1,False,False,CODE: A23<01><01>,False,False,False
+38f2e94efc75,context_rich_structure,dev,C43,,INVALID,none,0,False,False,CODE: C<0><0>,False,False,False
+01d3ff5888ad,context_rich_structure,dev,C91,A23,VALID,cue,1,False,False,CODE: A23:0000:0000,False,False,False
+7d68c729f7dd,context_rich_structure,dev,I33,,INVALID,none,0,False,False,CODE: A<0><0>,False,False,False
+97d7cb7d2576,context_rich_structure,dev,K81,A35,VALID,cue,1,False,False,CODE: A35<01><01>,False,False,False
+46879b57e8d7,context_rich_structure,dev,J18,A15,VALID,cue,1,False,False,CODE: A15<01><01>,False,False,False
+806845a87c2f,context_rich_structure,dev,C64,A36,VALID,cue,1,False,False,CODE: A36<01><01>,False,False,False
+8d19e88f1c90,context_rich_structure,dev,D69,,INVALID,none,0,False,False,CODE: A235000<2><2>,False,False,False
+5a5d374789e4,context_rich_structure,dev,I82,,INVALID,none,0,False,False,CODE: A2698<2>/<2>,False,False,False
+0597e19347c9,json_output,dev,C18,,INVALID,none,0,False,False,"{""code"": ""A"", ""condition"": ""Stable""}",False,False,False
+7f0a1375a954,json_output,dev,K56,H42,VALID,regex,1,False,False,"{3,""H427.8""}",False,False,False
+38f2e94efc75,json_output,dev,C43,,INVALID,none,0,False,False,"{3,""mucosal malignant melanoma of the hard palate""}",False,False,False
+01d3ff5888ad,json_output,dev,C91,,INVALID,none,0,False,False,"{3,""Anemia"", ""Anemia""}",False,False,False
+7d68c729f7dd,json_output,dev,I33,,INVALID,none,0,False,False,"{9, ""ICD-10-AM"", ""A""}",False,False,False
+97d7cb7d2576,json_output,dev,K81,,INVALID,none,0,False,False,"{""code"": ""M"", ""condition"": ""General Inflammatory Syndrome""}",False,False,False
+46879b57e8d7,json_output,dev,J18,,INVALID,none,0,False,False,"{""code"": ""A"", ""condition"": ""Infectious disease""}",False,False,False
+806845a87c2f,json_output,dev,C64,,INVALID,none,0,False,False,"{3,""VHL Disease""}",False,False,False
+8d19e88f1c90,json_output,dev,D69,,INVALID,none,0,False,False,"{""code"": ""N"", ""condition"": ""Idiopathic Thrombocytopenic Purpura""}",False,False,False
+5a5d374789e4,json_output,dev,I82,,INVALID,none,0,False,False,"{""code"": ""A"", ""condition"": ""Acute Respiratory Distress Syndrome""}",False,False,False
+0597e19347c9,hybrid_coder_structured,dev,C18,S72,VALID,cue,1,True,False,CODE: S72<10>,False,False,False
+7f0a1375a954,hybrid_coder_structured,dev,K56,S72,VALID,cue,1,True,False,CODE: S72,False,False,False
+38f2e94efc75,hybrid_coder_structured,dev,C43,S72,VALID,cue,1,True,False,CODE: S72,False,False,False
+01d3ff5888ad,hybrid_coder_structured,dev,C91,S72,VALID,cue,1,True,False,CODE: S72,False,False,False
+7d68c729f7dd,hybrid_coder_structured,dev,I33,S72,VALID,cue,1,True,False,CODE: S72<18>,False,False,False
+97d7cb7d2576,hybrid_coder_structured,dev,K81,J44,VALID,cue,1,True,False,CODE: J44,False,False,False
+46879b57e8d7,hybrid_coder_structured,dev,J18,J44,VALID,cue,1,True,False,CODE: J44,False,True,False
+806845a87c2f,hybrid_coder_structured,dev,C64,K35,VALID,cue,2,True,False,CODE: J44 \n  \n CODE: K35,False,False,False
+8d19e88f1c90,hybrid_coder_structured,dev,D69,S72,VALID,cue,1,True,False,CODE: S72,False,False,False
+5a5d374789e4,hybrid_coder_structured,dev,I82,S72,VALID,cue,1,True,False,CODE: S72<10>,False,False,False
+3127de73c5b5,zero_shot_strict_format,test,I71,J44,VALID,bare,1,False,False,J44,False,False,False
+d2a5947b1fed,zero_shot_strict_format,test,E11,J44,VALID,bare,1,False,False,J44,False,False,False
+349fe6e9c4f9,zero_shot_strict_format,test,E03,J44,VALID,bare,1,False,False,J44,False,False,False
+191f87a2d072,zero_shot_strict_format,test,C50,J44,VALID,bare,1,False,False,J44,False,False,False
+4beb4decadab,zero_shot_strict_format,test,I21,J44,VALID,bare,1,False,False,J44,False,False,False
+c9159cda6e35,zero_shot_strict_format,test,U07,J44,VALID,bare,1,False,False,J44,False,False,False
+e90e634d5a41,zero_shot_strict_format,test,I50,J56,VALID,regex,2,False,False,J56 J57 J5,False,False,False
+5ca75f1b82c5,zero_shot_strict_format,test,C18,J44,VALID,bare,1,False,False,J44,False,False,False
+a9c015055748,zero_shot_strict_format,test,K35,J56,VALID,bare,1,False,False,J56,False,False,False
+0cfa054dc94b,zero_shot_strict_format,test,C92,J56,VALID,bare,1,False,False,J56.3,False,False,False
+3127de73c5b5,zero_shot_minimal,test,I71,A28,VALID,cue,1,False,False,"Based on the information provided, the ICD-10-AM principal diagnosis code for this patient would be ""A28.9 - Congestive Heart Failure"". This diagnosis corresponds to the following codes from the ICD-1",False,False,False
+d2a5947b1fed,zero_shot_minimal,test,E11,,INVALID,none,0,False,False,"Based on the information provided, the ICD-10-AM principal diagnosis code for this patient would be ""Retinal Vein Occlusion (BRVO)"". This diagnosis corresponds to the clinical progress described in the discharge summary, which shows",False,False,False
+349fe6e9c4f9,zero_shot_minimal,test,E03,,INVALID,none,0,False,False,"Based on the information provided, the ICD-10-AM principal diagnosis code for this patient would be ""Autism Spectrum Disorder."" This can be inferred from several key points in the discharge summary: \n  \n 1. **History of Comor",False,False,False
+191f87a2d072,zero_shot_minimal,test,C50,,INVALID,none,0,False,False,"Based on the information provided, the ICD-10-AM principal diagnosis code for this patient would be ""Invasive Ductal Carcinoma."" This diagnosis corresponds to the following codes from the International Classification of Diseases (ICD",False,False,False
+4beb4decadab,zero_shot_minimal,test,I21,M76,VALID,cue,1,False,False,"Based on the information provided, the ICD-10-AM (International Classification of Diseases, Tenth Edition - General) principal diagnosis code for this patient would be: \n  \n **M76.4** \n  \n This code corresponds to ""Ac",False,False,False
+c9159cda6e35,zero_shot_minimal,test,U07,,INVALID,none,0,False,False,"Based on the information provided, the ICD-10-AM (International Classification of Diseases, Tenth Edition - Medical) principal diagnosis code for this patient would likely be ""Chronic Sinusitis"" or ""Hyperglycemia",False,False,False
+e90e634d5a41,zero_shot_minimal,test,I50,D65,VALID,cue,1,False,False,"Based on the information provided, the ICD-10-AM (International Classification of Diseases, Tenth Revision) principal diagnosis code for this patient would be: \n  \n **D65.3 - Aortic Valve Insufficiency** \n  \n This",False,False,False
+5ca75f1b82c5,zero_shot_minimal,test,C18,,INVALID,none,0,False,False,"Based on the information provided in the discharge summary, the ICD-10-AM principal diagnosis code for this patient would be ""Colorectal Cancer Stage IIIb"". This corresponds to the following codes: \n  \n - Code 19.",False,False,False
+a9c015055748,zero_shot_minimal,test,K35,,INVALID,none,0,False,False,"Based on the information provided, the ICD-10-AM (International Classification of Diseases, Tenth Edition - General) principal diagnosis code for this patient would be ""Appendicitis"". This can be inferred from the description of the",False,False,False
+0cfa054dc94b,zero_shot_minimal,test,C92,,INVALID,none,0,False,False,"Based on the information provided, the ICD-10-AM principal diagnosis code for this patient would be ""Chronic Myeloid Leukemia (CML)"". This can be inferred from several key points in the discharge summary:",False,False,False
+3127de73c5b5,few_shot_six,test,I71,N10,VALID,bare,1,True,False,N10,False,False,False
+d2a5947b1fed,few_shot_six,test,E11,N10,VALID,bare,1,True,False,N10,False,False,False
+349fe6e9c4f9,few_shot_six,test,E03,N10,VALID,bare,1,True,False,N10,False,False,False
+191f87a2d072,few_shot_six,test,C50,S72,VALID,bare,1,True,False,S72,False,False,False
+4beb4decadab,few_shot_six,test,I21,N10,VALID,bare,1,True,True,N10,False,False,False
+c9159cda6e35,few_shot_six,test,U07,J44,VALID,bare,1,True,False,J44,False,False,False
+e90e634d5a41,few_shot_six,test,I50,N10,VALID,bare,1,True,False,N10,False,False,False
+5ca75f1b82c5,few_shot_six,test,C18,S72,VALID,bare,1,True,False,S72,False,False,False
+a9c015055748,few_shot_six,test,K35,S72,VALID,bare,1,True,True,S72,False,False,False
+0cfa054dc94b,few_shot_six,test,C92,N10,VALID,bare,1,True,False,N10,False,False,False
+3127de73c5b5,context_rich_structure,test,I71,A28,VALID,cue,1,False,False,CODE: A28<01><01>,False,False,False
+d2a5947b1fed,context_rich_structure,test,E11,,INVALID,none,0,False,False,CODE: A100000000000,False,False,False
+349fe6e9c4f9,context_rich_structure,test,E03,A15,VALID,cue,1,False,False,CODE: A15<01><02>,False,False,False
+191f87a2d072,context_rich_structure,test,C50,,INVALID,none,0,False,False,CODE: A10000000101,False,False,False
+4beb4decadab,context_rich_structure,test,I21,,INVALID,none,0,False,False,CODE: A1000101010,False,False,False
+c9159cda6e35,context_rich_structure,test,U07,,INVALID,none,0,False,False,CODE: A<0><0>,False,False,False
+e90e634d5a41,context_rich_structure,test,I50,A35,VALID,cue,1,False,False,CODE: A35<01><01>,False,False,False
+5ca75f1b82c5,context_rich_structure,test,C18,,INVALID,none,0,False,False,CODE: A100100010,False,False,False
+a9c015055748,context_rich_structure,test,K35,A23,VALID,cue,1,False,False,CODE: A23<01><01>,False,False,False
+0cfa054dc94b,context_rich_structure,test,C92,A35,VALID,cue,1,False,False,CODE: A35:00:00,False,False,False
+3127de73c5b5,hybrid_coder_structured,test,I71,S72,VALID,cue,1,True,False,CODE: S72,False,False,False
+d2a5947b1fed,hybrid_coder_structured,test,E11,S72,VALID,cue,1,True,False,CODE: S72,False,False,False
+349fe6e9c4f9,hybrid_coder_structured,test,E03,S72,VALID,cue,1,True,False,CODE: S72,False,False,False
+191f87a2d072,hybrid_coder_structured,test,C50,S72,VALID,cue,1,True,False,CODE: S72,False,False,False
+4beb4decadab,hybrid_coder_structured,test,I21,S72,VALID,cue,1,True,True,CODE: S72<18>,False,False,False
+c9159cda6e35,hybrid_coder_structured,test,U07,J44,VALID,cue,1,True,False,CODE: J44,False,False,False
+e90e634d5a41,hybrid_coder_structured,test,I50,S72,VALID,cue,1,True,False,CODE: S72,False,False,False
+5ca75f1b82c5,hybrid_coder_structured,test,C18,S72,VALID,cue,1,True,False,CODE: S72<unknown><unknown>,False,False,False
+a9c015055748,hybrid_coder_structured,test,K35,J44,VALID,cue,1,True,True,CODE: J44,False,False,False
+0cfa054dc94b,hybrid_coder_structured,test,C92,S72,VALID,cue,1,True,False,CODE: S72,False,False,False

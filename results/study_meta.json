@@ -1,0 +1,41 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "started": "2026-11-21T19:40:47",
+  "model_ran": true,
+  "failure": null,
+  "stages_completed": [
+    "dev",
+    "test"
+  ],
+  "scan_config": {
+    "seed": 20260321,
+    "dev_n": 10,
+    "test_n": 10,
+    "scan_rows": 40000,
+    "min_chars": 600,
+    "max_chars": 2000,
+    "split": "train"
+  },
+  "n_dev": 10,
+  "n_test": 10,
+  "generation_config": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "do_sample": false,
+    "seed": 20260321,
+    "batch_size": 5,
+    "max_new_tokens": null
+  },
+  "device": "cpu",
+  "dev_winner": "zero_shot_strict_format",
+  "dev_winner_accuracy": 0.0,
+  "test_templates": [
+    "zero_shot_strict_format",
+    "zero_shot_minimal",
+    "few_shot_six",
+    "context_rich_structure",
+    "hybrid_coder_structured"
+  ],
+  "figure_template": "context_rich_structure",
+  "finished": "2026-11-21T19:45:11"
+}
